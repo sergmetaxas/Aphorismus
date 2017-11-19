@@ -10,15 +10,10 @@ html
  
 
   body
-  #rcorners
-    div.container
-      div#header
-        h1 aphorismus
-      div
-        = yield    
-    div.empty
+    div.container-fluid
+      h1.text-center aphorismus
+    div.container#aphorism
+      = yield    
     footer
-      p = link_to "Вам сюда!", "http://natribu.org/"
+      p#footer = link_to "Вам сюда!", "http://natribu.org/"
         
-            
-  
