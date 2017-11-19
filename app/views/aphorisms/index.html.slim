@@ -1,1 +1,5 @@
-h1 Афоризм на каждый день
+div#content
+  p=@aphorism.text
+  div#author=@aphorism.author.name
+.button
+  = button_to "next", :root, :method => "get"
