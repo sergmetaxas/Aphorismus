@@ -69,3 +69,5 @@ group :test do
   gem 'database_cleaner', '~> 1.5'
   gem 'rails-controller-testing'
 end
+
+gem 'pg_search'

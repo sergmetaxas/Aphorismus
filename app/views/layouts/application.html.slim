@@ -11,9 +11,9 @@ html
 
   body
     div.container-fluid
-      h1.text-center aphorismus
-    div.container#aphorism
-      = yield    
+      h1.text-center#header
+        = link_to 'aphorismus', root_path
+    = yield    
     footer
       p#footer = link_to "Вам сюда!", "http://natribu.org/"
         

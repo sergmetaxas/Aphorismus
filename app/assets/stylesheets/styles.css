@@ -9,7 +9,12 @@ body {
   background-size: cover;
 }
 
-h1 {
+a:hover{
+  text-decoration: none;
+}
+
+
+#header a {
   text-transform: uppercase;
   font-family: 'Germania One', cursive;
   font-size: 130px;
@@ -17,26 +22,29 @@ h1 {
   color: #1F1D1D;
 }
 
+
+
 p {
   font-family: 'Lobster', cursive;
   font-size: 40px;
   text-align: center;
   opacity: 1.0;
   color: rgb(2, 1, 1);
-  padding-top: 20px;
+  padding: 20px;
+
 }
 
 #aphorism {
   background-color: gray;
   opacity: 0.6;
   border-radius: 25px;
-  margin-top: 160px;
 }
 
 #author {
   font-family: 'Lobster', cursive;
   font-size: 25px;
   text-align: right;
+  padding-right: 15px;
   opacity: 1.0;
   color: rgb(2, 1, 1);
   padding-bottom: 6px;
@@ -52,3 +60,9 @@ footer {
 p#footer {
   font-size: 20px;
 }
+
+.container {
+  margin-top: 160px;
+}
+
+
