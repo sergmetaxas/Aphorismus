@@ -40,6 +40,8 @@ gem 'draper'
 
 gem 'pundit'
 
+gem 'pg_search'
+
 gem "therubyracer" 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "less-rails"
@@ -70,4 +72,3 @@ group :test do
   gem 'rails-controller-testing'
 end
 
-gem 'pg_search'

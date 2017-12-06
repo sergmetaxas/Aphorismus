@@ -1,3 +1,3 @@
-div.container
+div.container#basic_aphorism
   = render partial: 'aphorism', object: @aphorism, locals: { show_author_link: true }
   = button_to "next", :root, method: "get", class: 'btn btn-default'

@@ -18,10 +18,10 @@ a:hover{
   text-transform: uppercase;
   font-family: 'Germania One', cursive;
   font-size: 130px;
-  opacity: 0.6;
+  opacity: 0.5;
   color: #1F1D1D;
+  margin-top: 0px !important;
 }
-
 
 
 p {
@@ -38,6 +38,7 @@ p {
   background-color: gray;
   opacity: 0.6;
   border-radius: 25px;
+  margin: 0px;
 }
 
 #author {
@@ -61,8 +62,35 @@ p#footer {
   font-size: 20px;
 }
 
-.container {
-  margin-top: 160px;
+#basic_aphorism {
+  margin-top: 90px;
 }
 
+#panel {
+  opacity: 0.4;
+}
 
+#navbar {
+  margin-bottom: 0;
+}
+
+div.navbar-header {
+  text-transform: uppercase;
+  font-family: 'Germania One', cursive;
+}
+
+input#search{
+  font-family: 'Lobster', cursive;
+  font-size: 21px;
+}
+
+button#search {
+  font-family: 'Lobster', cursive;
+  font-size: 14px;
+
+}
+
+h2#search_result {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}

@@ -1,4 +1,8 @@
 class Aphorism < ApplicationRecord
+  
+  include PgSearch
+  pg_search_scope :search_by, against: [:text]
+  
   belongs_to :author
   validates :text, length: { minimum: 7 }
   validates :author, presence: true

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'aphorisms#index'
   get '/author/:id', to: 'aphorisms#aphorisms_by_author', as: 'aphorisms_by_author'
+  get 'search', to: 'search#index'
 end
