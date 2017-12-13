@@ -2,8 +2,9 @@ div.container
   h2#search_result.text-center
     ' Результат поиска по запросу:
     b
-      = params[:query]
+      = params[:keywords]
 
   - @search_result.each do |result|
     = render partial: 'aphorisms/aphorism', object: result, locals: { show_author_link: true }
     br
+    
