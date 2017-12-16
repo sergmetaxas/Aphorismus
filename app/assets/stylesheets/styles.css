@@ -41,15 +41,20 @@ p {
   margin: 0px;
 }
 
-#author {
+#author a {
   font-family: 'Lobster', cursive;
   font-size: 25px;
   text-align: right;
-  padding-right: 15px;
   opacity: 1.0;
   color: rgb(2, 1, 1);
   padding-bottom: 6px;
+  padding-right: 20px;
 }
+
+#author {
+  text-align: right;
+}
+
 
 footer {
   bottom: 0;
@@ -94,3 +99,8 @@ h2#search_result {
   font-family: 'Lobster', cursive;
   font-size: 40px;
 }
+
+/*.linkable:hover{
+  background-color: rgb(175, 169, 169);
+  /*display: inline-block;
+}*/

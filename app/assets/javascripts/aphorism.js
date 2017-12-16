@@ -1,16 +1,16 @@
-$(document).ready(function () {
-  $('#content').click(function () {
-    reloadAphorism();
-  })
-});
+// $(document).ready(function () {
+//   $('#content').click(function () {
+//     reloadAphorism();
+//   })
+// });
 
-function reloadAphorism() {
-  $.ajax({
-    url: "/",
-    success: function (data) {
-      console.log(data);
-      $('#basic_aphorism').html = ''
-    }
-  });
-  console.log("ardjaserh")
-}
+// function reloadAphorism() {
+//   $.ajax({
+//     url: "/ ",
+//     success: function (data) {
+//       console.log(data);
+//       $('#content').empty().append(data);
+//     }
+//   });
+//   console.log("ardjaserh")
+// }
