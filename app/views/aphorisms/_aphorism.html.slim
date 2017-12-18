@@ -1,8 +1,6 @@
-div#content
-  div#aphorism
-    p= aphorism.text
+div.linkable#content 
+  div#aphorism 
+    p = aphorism.text
     - if show_author_link  
-      div.linkable#author= link_to aphorism.author.name, aphorisms_by_author_path(id: aphorism.author.id) 
+      div#author= link_to aphorism.author.name, aphorisms_by_author_path(id: aphorism.author.id) 
         
-     
-     

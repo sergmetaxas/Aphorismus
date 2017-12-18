@@ -2,6 +2,11 @@ class AphorismsController < ApplicationController
   
   def index
     @aphorism = Aphorism.get_any
+
+    respond_to do |format|
+      format.html
+      format.json { render json: { text: @aphorism.text, author: @aphorism.author } }     
+    end
   end
 
   def aphorisms_by_author

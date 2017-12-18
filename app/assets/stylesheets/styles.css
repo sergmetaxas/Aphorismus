@@ -100,7 +100,13 @@ h2#search_result {
   font-size: 40px;
 }
 
-/*.linkable:hover{
+.linkable:hover{
   background-color: rgb(175, 169, 169);
-  /*display: inline-block;
-}*/
+  /* opacity: 0.6; */
+  /*display: inline-block;*/
+}
+
+#content {
+  border-radius: 25px;
+}
+
