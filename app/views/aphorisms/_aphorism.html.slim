@@ -1,6 +1,9 @@
-div.linkable#content 
+div#content 
   div#aphorism 
     p = aphorism.text
-    - if show_author_link  
-      div#author= link_to aphorism.author.name, aphorisms_by_author_path(id: aphorism.author.id) 
-        
+    div#author
+      - if show_author_link  
+        = link_to aphorism.author.name, aphorisms_by_author_path(id: aphorism.author.id) 
+      - else
+        span= aphorism.author.name 
+      

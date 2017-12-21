@@ -15,4 +15,13 @@ $('#basic_aphorism').click(function () {
 //});
 
 
+$('document').ready(function () {
+  var wHeight = $(window).height();
+  $('#scroll_content').css({
+    'height': wHeight + 'px'
+  });
+});
+
+
+
 

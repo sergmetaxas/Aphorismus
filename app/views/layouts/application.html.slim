@@ -3,6 +3,7 @@ html
   head
     title Aphorismus
     = csrf_meta_tags
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Yanone+Kaffeesatz" rel="stylesheet"> 
     link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"
     link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet"
     = stylesheet_link_tag    'application', media: 'all'
@@ -21,8 +22,8 @@ html
       h1.text-center#header
         = link_to 'aphorismus', root_path
     = yield    
-    footer
-      p#footer = link_to "Вам сюда!", "http://natribu.org/"
+  .footer
+    p#footer= link_to "Вам сюда!", "http://natribu.org/"
 
-= javascript_include_tag 'application'
+  = javascript_include_tag 'application'
         

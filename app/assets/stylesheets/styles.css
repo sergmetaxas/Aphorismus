@@ -1,10 +1,9 @@
-body, html {
-  height: 100%;
-}
-
 body {
+  /* min-height: 100%; */
+  margin:0;
+  padding:0;
   background-image: url('sokrat.jpg');
-  background-position: center;
+  /* background-position: center !important; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,10 +23,10 @@ a:hover{
 }
 
 
-p {
+ p {
   font-family: 'Lobster', cursive;
-  font-size: 40px;
-  text-align: center;
+  font-size: 30px;
+  text-align: left;
   opacity: 1.0;
   color: rgb(2, 1, 1);
   padding: 20px;
@@ -41,9 +40,9 @@ p {
   margin: 0px;
 }
 
-#author a {
+#author {
   font-family: 'Lobster', cursive;
-  font-size: 25px;
+  font-size: 20px;
   text-align: right;
   opacity: 1.0;
   color: rgb(2, 1, 1);
@@ -51,24 +50,44 @@ p {
   padding-right: 20px;
 }
 
+#author a{
+  color: rgb(2, 1, 1);
+}
+
+#author a:hover{
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.883);
+}
+
 #author {
   text-align: right;
 }
 
-
-footer {
+/* footer {
   bottom: 0;
-  position: absolute;
   right: 0;
   left: 0;
+}*/
+
+.footer p {
+  font-size: 20px;
+  color: gray;
+  text-align: center;
 }
 
-p#footer {
-  font-size: 20px;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(44, 42, 42, 0.123);
+  color: white;
+  text-align: center;
 }
 
 #basic_aphorism {
-  margin-top: 90px;
+  margin-top: 160px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 #panel {
@@ -95,18 +114,22 @@ button#search {
 
 }
 
+
 h2#search_result {
-  font-family: 'Lobster', cursive;
-  font-size: 40px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
 }
 
-.linkable:hover{
-  background-color: rgb(175, 169, 169);
-  /* opacity: 0.6; */
+div.linkable:hover{
+  background-color: rgba(175, 169, 169, 0.411);
+  border-radius: 25px;
+  /* opacity: 0.9; */
   /*display: inline-block;*/
 }
 
-#content {
-  border-radius: 25px;
+.scroll{
+  overflow:scroll; 
+  height:560px;
+  overflow-x:hidden;
+  padding-right: 17px;  
 }
-

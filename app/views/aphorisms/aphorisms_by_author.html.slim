@@ -1,6 +1,6 @@
 div.container
-  div#aphorisms_by_author
+  div#aphorisms_by_author.scroll 
     - @aphorisms_by_author.each do |aph|
-      = render partial: 'aphorism', object: aph, locals: { show_author_link: true }
+      = render partial: 'aphorism', object: aph, locals: { show_author_link: false }
       br
    
