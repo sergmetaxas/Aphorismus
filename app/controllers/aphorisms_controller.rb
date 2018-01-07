@@ -5,8 +5,12 @@ class AphorismsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: { text: @aphorism.text, author: @aphorism.author } }     
+      format.json { render json: { text: @aphorism.text, author: @aphorism.author } }   
     end
+  end
+
+  def show
+    @aphorism = Aphorism.where(id: params[:id].to_i).first
   end
 
   def aphorisms_by_author

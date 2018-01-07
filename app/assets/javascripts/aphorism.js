@@ -1,6 +1,5 @@
 
-//$(document).ready(function () {
-$('#basic_aphorism').click(function () {
+$('#content').click(function () {
   $.ajax({
     url: "/",
     dataType: 'json',
@@ -8,20 +7,23 @@ $('#basic_aphorism').click(function () {
       $('#aphorism p').empty().append(income_data.text);
       $('#author a').attr('href', '/author/' + income_data.author.id);
       $('#author a').text(income_data.author.name);
-      console.log('uhg8');
     }
   })
 });
-//});
 
-
-$('document').ready(function () {
-  var wHeight = $(window).height();
-  $('#scroll_content').css({
-    'height': wHeight + 'px'
-  });
-});
-
-
+// $('#aphorism_search').submit(function (e) {
+//   e.preventDefault();
+//   $.ajax({
+//     url: '/search',
+//     type: 'post',
+//     data: $('#aphorism_search').serialize(),
+//     success: function (data) {
+//       alert(data.result);
+//     },
+//     error: function (data) {
+//       alert("asdjhgvsakghvsakf");
+//     }
+//   });
+// });
 
 
